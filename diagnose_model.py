@@ -46,10 +46,8 @@ class DiagnoseModel:
             action = SelfPlay.select_action(root, 0)
 
             # Players play turn by turn
-            if virtual_to_play + 1 < len(self.config.players):
-                virtual_to_play = self.config.players[virtual_to_play + 1]
-            else:
-                virtual_to_play = self.config.players[0]
+            if len(self.config.players) > 1 and (self.config.single_action_turn or action == self.config.end_turn_action):
+                virtual_to_play = (virtual_to_play + 1) % len(self.config.players)
 
             # Generate new root
             value, reward, policy_logits, hidden_state = self.model.recurrent_inference(

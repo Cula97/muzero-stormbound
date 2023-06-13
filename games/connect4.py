@@ -22,6 +22,8 @@ class MuZeroConfig:
         self.action_space = list(range(7))  # Fixed list of all possible actions. You should only edit the length
         self.players = list(range(2))  # List of players. You should only edit the length
         self.stacked_observations = 0  # Number of previous observations and previous actions to add to the current observation
+        self.single_action_turn = True
+        self.end_turn_action = -1
 
         # Evaluate
         self.muzero_player = 0  # Turn Muzero begins to play (0: MuZero plays first, 1: MuZero plays second)

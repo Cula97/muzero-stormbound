@@ -328,10 +328,9 @@ class MCTS:
                 search_path.append(node)
 
                 # Players play turn by turn
-                if virtual_to_play + 1 < len(self.config.players):
-                    virtual_to_play = self.config.players[virtual_to_play + 1]
-                else:
-                    virtual_to_play = self.config.players[0]
+                switch_turn = self.config.single_action_turn or action == self.config.end_turn_action
+                if len(self.config.players) > 1 and switch_turn:
+                    virtual_to_play = (virtual_to_play + 1) % len(self.config.players)
 
             # Inside the search tree we use the dynamics function to obtain the next hidden
             # state given an action and the previous hidden state
@@ -396,7 +395,7 @@ class MCTS:
             value_score = min_max_stats.normalize(
                 child.reward
                 + self.config.discount
-                * (child.value() if len(self.config.players) == 1 else -child.value())
+                * (child.value() if parent.to_play == child.to_play else -child.value())
             )
         else:
             value_score = 0
@@ -422,9 +421,8 @@ class MCTS:
                 node.visit_count += 1
                 min_max_stats.update(node.reward + self.config.discount * -node.value())
 
-                value = (
-                    -node.reward if node.to_play == to_play else node.reward
-                ) + self.config.discount * value
+                value *= self.config.discount
+                value += -node.reward if node.to_play == to_play else node.reward
 
         else:
             raise NotImplementedError("More than two player mode not implemented.")
