@@ -1,0 +1,207 @@
+N89 - Before moving, *get* a random *status effect*
+N1 - On death, *give 1/2/3/4/5 strength* to a random *surrounding* enemy unit and *vitalize* it
+N2 - Randomly *spawn* a Knight with *1/2/3/4/5 strength*
+N66 - On play, *gain speed* equal to the amount of enemy units in front
+N105 - *Confuse* a target unit and *give 1/2/3/4/5 strength* to the weakest friendly feline
+N90 - Before moving, *split* itself into a unit on both sides and cannot split again this turn
+N5 - When played as the last card from your hand, *gain 6/7/8/10/12 strength*
+N99 - *Deal 1/2/3/4/5 damage* to non-temple structures, then spread the amount received among *surrounding* enemy units and structures
+N6 - On death, *give 3/4/5/6/7 strength* to a random friendly Dragon
+N86 - On play, *confuse* itself then *gain 2 speed*
+N62 - On play, *confuse* enemy units in front
+N97 - Before moving, *steal* all status effects from all friendly units and *gain 1/2/2/3/3 strength* for each unique status effect received
+N67 - If played with no *surrounding* enemies, *gain 2 speed*, else if played with no *bordering* enemies *gain 1 speed*
+N101 - *Give* strength to 1/1/2/2/3 random friendly unit/unit/units/units/units with no ability equal to their mana cost, then *give* them additional strength up to 1/2/2/3/5 of their mana cost
+N7 - On play, *spawn* a *1/2/2/3/3 strength* Knight on the tile behind
+N8 - On play, *create* a *0* cost unit with *5/6/6/8/10 strength* and add it to your deck
+N9 - *Reduce* the strength of a target enemy unit to *5/4/3/2/1*
+N10 - On play, *deal 2/2/3/3/4 damage* to non-Dragon units in front
+N94 - *Disable* a target unitâ€™s ability, then *deal 2/3/4/5/6 damage*
+N11 - On play, *deal 2/3/4/5/6 damage* to a random *surrounding* enemy
+N12 - On play, *discard* a random non-Pirate card from your hand
+N14 - On play, *draw 1/1/1/2/2* card/card/card/cards/cards
+N61 - On play, randomly *force* a *surrounding* confused enemy unit to attack a *bordering* enemy
+N23 - Randomly *deal 2/3/4/5/6 damage* to one unit of each *unit type*
+N88 - Before moving, *teleport* itself to a random tile in its row
+N24 - On play, *give 2/2/3/3/4 strength* to another random friendly unit
+N15 - *Give 2/3/4/5/6 strength* to a target friendly unit and *vitalize* it
+N100 - *Destroy* a target friendly Ancient unit and *play* a random level 1/2/3/4/5 non-Ancient unit on the same tile
+N81 - At the start of your turn, *remove 1/1/1/2/2 strength* from the stronger base and *give* it to the weaker one
+N85 - At the start of your turn, *give* (or *remove*) *fixedly forward* movement to the leftmost unit card in your hand, then *destroy* the weakest confused unit
+N73 - After surviving damage, *deal 3/3/4/4/5 damage* spread randomly among enemy units
+N63 - *Force* the target enemy unit with *4/5/6/7/8 or less strength* to attack a random *bordering* enemy
+N103 - Before moving, *teleport* to the first empty tile behind and *gain 1/1/1/2/2 strength*
+N17 - On play, *destroy surrounding* units with *1/1/2/2/3 /or/or/or/or /less/less/less/less strength*
+N96 - Before moving, *deal 1/1/1/2/2 damage* for each friendly unit to a *single* random *bordering* enemy unit. If that unit dies, *move* towards its tile instead
+N18 - Before attacking a non-Dragon unit, *deal 2/2/3/3/4 damage* to other enemies with the same *unit type*
+N95 - Before moving, *vitalize* itself then *give 1/2/2/3/3 strength* to weaker friendly units
+N87 - Before moving, *spawn* a unit with *2/2/3/3/4 strength* on both sides
+N104 - At the start of your turn, *confuse* the most forward enemy unit
+N59 - On play, *spawn 2/3/4/5/6 strength* Knights in front of *surrounding* enemy units
+N20 - At the start of your turn, *give 2/2/3/4/5 strength* to friendly units in front
+N21 - *Deal 4/5/6/7/8 damage* to a target enemy unit or structure
+N98 - *Trigger* the ability of a friendly non-legendary unit with up to 3/4/5/6/7 strength, then *destroy* that unit
+N31 - *Deal 5/6/7/8/10 damage* to units *bordering* your base
+N22 - On play, *replace 1/1/1/2/2*  random non-Pirate card/card/card/cards/cards from your hand
+N93 - Before moving, *destroy* the weakest unit from the player who has most units on the board
+N75 - After surviving damage, *gain 2/2/3/3/4 strength* for each stronger enemy unit
+N102 - Before moving, if there are no enemy units in front, *create* a *0 cost* level 1/2/3/4/5 single-use non-common Temple card and add it to your deck
+N41 - After attacking, *spawn* a *3/4/5/6/7 strength* Undead on the tile behind
+N64 - Before attacking a confused unit, *deal up* to *5/6/7/8/9 of its strength as damage* to enemies *surrounding* it
+N91 - On play, *deal 1/2/2/3/3* damage to a random friendly non-Hero unit on the side, then deal the *same damage* to the first enemy in front
+N65 - If played *bordering* an enemy, *gain 2 strength* else *gain 1 speed*
+N77 - On play, *draw 1/1/2/2/3* single-use non-pirate card copy/copy/copies/copies/copies from the enemyâ€™s hand. *Decrease* its/its/their/their/their mana cost by *1* if you have a pirate card in your hand
+N25 - On play, *deal 4/5/6/7/8 damage* to *surrounding* enemy structures
+N78 - On play, *confuse* up to *1/1/2/2/3* random *bordering* enemy units and *force* it/it/them/them/them to move
+N33 - When played with a full hand, *discard all* cards and *draw 4* new cards
+N26 - On death, *give 4/5/6/7/8 strength* spread randomly among *surrounding* friendly units
+N80 - Before moving, *disable* the ability of *1/2/2/3/4 surrounding* enemy unit/units/units/units/units
+N27 - Before attacking a Dragon, *deal 5/6/7/8/10 additional damage*
+N29 - *Deal 1/2/2-3/3/4 damage* to enemy units and structures
+N79 - On play, *confuse* as many enemies as there are friendly units
+N60 - After attacking, *confuse weaker* enemy units
+N38 - Before attacking a weaker unit, create a *5/6/7/8/10 strength copy* of that card and add it to your deck
+N83 - On play, *move fixedly forward*
+N69 - Before attacking an enemy unit, *force bordering* enemy units with *4/5/6/7/8 or lower strength* to attack it
+N34 - At the start of your turn, *deal 4/5/6/7/8 damage* to the *most forward* enemy unit or structure
+N35 - On play, *deal 1/1/2/2/3 damage* to a random enemy for each unique *surrounding primary unit type*
+N36 - When played with at least *3 surrounding* enemies, *deal 2/3/4/5/6 damage* to them
+N49 - On death, *destroy* units in front with *3/4/5/6/7 strength or less strength.* *Spawn 3/4/5/6/7 strength* Ravens on tiles behind
+N74 - After surviving damage, *spawn* an Elder with the *same strength* on a random *bordering* tile
+N37 - On play, *deal 5/6/7/8/10 damage* to the closest enemy behind
+N51 - On play, *gain 2/2/3/3/4 strength* for every other Dragon
+N39 - When played *bordering* a friendly structure or base, *gain 3/4/5/6/7 strength*
+N40 - *Give 7/8/8/10/12 strength* to a target friendly unit and *2/2/3/4/5 strength* to other units of the same *unit type*
+N42 - On play, *gain 3/3/4/5/6 strength* for each Pirate in your hand
+N43 - When played *bordering* a friendly Dragon, *spawn 1/1/2/2/3 strength* Dragons on tiles *bordering* either
+N44 - *Deal 2/2/3/3/4 damage* to *2/3/3/4/4* random enemies
+N45 - At the start of your turn, *explode* and *deal 2/2/3/3/4 damage* to enemies
+N76 - After surviving damage, *increase* the strength of weaker friendly units to match her own
+N46 - On death, do a random effect: *give 6/7/8/10/12 strength*, *deal 5/6/7/8/10 damage* or *spawn* a *4/5/6/7/8 strength* unit
+N68 - When played *bordering* your base, *gain 3 speed*
+N47 - Before attacking, *deal 2/2/3/3/4 damage* to *surrounding* enemy units and structures
+N70 - After surviving damage, randomly *give 4/5/6/7/9 strength* to another friendly unit
+N48 - On play, randomly *play 1/1/1/2/2* spell card/card/card/cards/cards costing up to her own mana cost
+N50 - *Spawn 4/5/6/7/8 strength* units on tiles *bordering* a target friendly unit
+N55 - Before attacking a unit or structure, *deal 3/4/5/6/7 additional damage* to it
+N53 - On play, *gain 2/2/3/3/4 strength* for every enemy unit
+N92 - Before moving, *respawn 1/2/3/4/ surrounding* non-legendary friendly unit/units/units/units/units destroyed since the beginning of the turn
+N57 - On play, *deal 7/8/10/12/15 damage* spread randomly among *surrounding* enemies
+N56 - When played on the tile in front or the side of a friendly *Temple structure or base*, *spawn 4/5/6/7/8 strength* Knights on its *bordering* tiles
+N58 - Before attacking a unit, *reduce* its strength to *3*
+W1 - *Freeze* a target enemy unit. If it is already frozen, *deal 8/10/12/15/18 damage* to it instead
+W2 - On play, *freeze bordering* enemy units
+W31 - On play, *freeze* itself
+W33 - Before moving, *lose 3 mana* and *freeze* an enemy in the tile in front. *Decrease* the loss by *1* for each other *friendly* Ancient
+W29 - At the start of your turn, *vitalize 1/2/2/3/3* friendly unit/units/units/units/units, then *spawn* a *1 strength* copy of itself on the tile behind
+W3 - At the start of your turn, *give 2/2/3/3/4 strength* to another friendly unit or structure
+W4 - Before attacking a frozen enemy, *deal 4/5/6/7/8 damage* to *surrounding* frozen enemies
+W5 - Before attacking, randomly *destroy* a friendly non-Dragon unit
+W32 - On death, *freeze surrounding* units
+W30 - At the start of your turn, *freeze* the most forward enemy unit
+W11 - *Destroy* frozen enemy units with *5/6/7/8/9 or less strength* and *freeze* the others
+W7 - When played *bordering* a stronger friendly unit, *gain 4/5/6/7/8 strength*
+W12 - On play, *gain 2 mana*
+W8 - On play, *destroy* frozen units in front with *4/5/6/7/8 or less strength*. Gain *4 mana* for each unit destroyed
+W24 - At the start of your turn, *remove 1/1-2/2/2-3/3 strength* from itself and *give* it to your base
+W14 - *Give 6/8/10/12/15 strength* to a target friendly unit or structure with *4/5/6/7/8 or less strength*
+W28 - After surviving damage, *destroy* enemy units in front
+W9 - At the start of your turn, *gain 2 mana*
+W6 - *Give 5/6/7/8/9 strength* to a target friendly unit or structure. *Freeze surrounding* enemy units
+W13 - On play, *build* a *4/5/6/7/8 strength* Fort on a random *bordering* tile
+W15 - When dying not *bordering* any base, *deal 3/4/5/6/7 damage* to non-Dragon units
+W16 - Before attacking, *gain 4 mana*
+W10 - On play, *spend* your remaining mana and *gain 2/2/3/4/5 strength* for each
+W21 - On play, for every 3 remaining mana *deal 1 damage* to enemies in front
+W17 - On play, *lose 1 strength* for every other friendly unit
+W27 - After surviving damage, *gain 3/3/3/4/4 strength*
+W18 - On play, *give 6/7/8/10/12 strength* to a random *bordering* friendly unit or structure
+W22 - Before attacking a unit or structure, *gain 3/4/5/6/7 strength*
+W19 - *Gain 11/12/13/14/15 mana*
+W23 - When played *bordering* your base, *give* it *3/3/4/5/6 strength*
+I1 - On play, *deal 1 damage* to another friendly unit or structure
+I2 - On play, *trigger* the ability of *bordering/surrounding/surrounding/all/all * friendly structures
+I4 - On play, *push* a random *bordering* enemy unit away
+I5 - At the start of your turn, *deal 3 damage* to itself
+I3 - *Give 2/3/4/5/6 strength* to friendly units *surrounding* a friendly structure
+I30 - On play, *vitalize* itself and *1/1/2/2/2 surrounding* friendly unit/unit/units/units/units
+I7 - Before attacking a unit, *give 1/1/2/2/3 strength* to itself and a *surrounding* friendly Dragon
+I8 - When played *bordering* a friendly Construct, *both gain 1/2/2/3/4 strength*
+I9 - On play, *push* a friendly unit on the tile in front away
+I29 - When played with a friendly copy on the board, *teleport 2/3/4/6/8 surrounding* units from it and *destroy* it. Otherwise, *return* this card to your hand
+I10 - At the start of your turn, *give 2/2/3/4/5 strength* to *surrounding* friendly Constructs
+I31 - Before moving, *make* friendly ancients *pull* enemy units from behind, then *deal 1/2/2/3/3* damage to pulled units
+I11 - *Give 3/4/5/5/6 strength* to a target friendly unit and a random friendly unit *bordering/bordering/bordering/surrounding/surrounding* it
+I17 - On play, *fly* to the first enemy unit in front, *push* it away and *deal 2/3/4/5/6 damage*, then *move* forward if it died
+I13 - When dying *bordering* the enemy base, randomly *spawn* a *6/7/8/10/12 strength* Dragon at the enemy base
+I6 - On death, *spawn* a *1/1/2/2/3 strength* Construct on a random *bordering* tile
+I18 - *Push* enemy units in a target unitâ€™s column away and *deal 3/4/5/6/7 damage* to them
+I14 - At the start of your turn, *spawn* a *2/3/4/5/6 strength* Construct on the tile in front
+I15 - On play, *deal 1/1/2/2/3 damage* to the first enemy in front
+I27 - After surviving damage, *set strength to 2/3/4/5/6*
+I20 - Before attacking a stronger unit, *push* it away and *deal 3/4/5/6/7 damage* to it
+I12 - On death, *deal 3/4/5/6/7 damage* to a random *bordering* enemy
+I16 - After attacking, *give 2/2/3/4/5 strength* to itself and a random *surrounding* friendly unit
+I22 - When dying not *bordering* any base, randomly *respawn* at your base with *5/6/7/8/10 strength*
+I19 - At the start of your turn, *deal 3/3/4/5/6 damage* to the first enemy in front
+I23 - On play, *pull* enemy units towards itself. Then *deal 3/4/5/6/7 damage* to *bordering* enemy units
+I28 - After surviving damage, deal up to *3/3/4/5/6 of its remaining strength as damage* to the first enemy in front
+I24 - On play, *build* a *3/3/4/5/6 strength* workshop on the tile behind, which *spawns 2/3/4/5/6* strength Constructs each turn
+F30 - *Give 1/2/3/4/5 strength* to friendly poisoned units and *vitalize* them
+F1 - On play, *spawn* a *1 strength* Toad on *2/2/3/3/4 tiles* bordering each *surrounding* poisoned unit
+F2 - On play, *poison 1/1/2/2/3* random enemy unit/unit/units/units/units
+F3 - On death, *spawn* a *1 strength enemy* Raven on a random *bordering* tile
+F4 - *Destroy* a target friendly unit. *Deal 2/3/4/5/6 damage* to *surrounding* units and *poison* them
+F5 - On death, *deal 1/2/3/4/5 damage* to *bordering* units and *poison* them
+F27 - After surviving damage, *convert* itself
+F7 - On play, *poison* itself
+F8 - *Spawn* a *1 strength* Toad on *3/4/4-5/5/6* random tiles
+F29 - At the end of your turn, *remember* the state of *surrounding* friendly units and structures. At the start of your turn, *restore 1/2/2/3/3* of them
+F9 - When played *bordering* a friendly Dragon, *deal 3/4/5/6/7 damage* to the strongest enemy unit
+F10 - On death, *spawn 1 strength* Toads on *2/3/4/5/6* random *surrounding* tiles
+F24 - On play, *convert* a random *bordering* enemy unit with *2/3/4/5/6 or less strength*
+F11 - *Deal 5/6/7/8/10 damage* to a target poisoned unit. If that kills it, *spawn* a *5/6/7/8/10 strength* Raven there
+F12 - After attacking, *jump* in front of a random enemy unit or structure and *gain 2/3/4/5/6 strength*
+F13 - At the start of your turn, *poison 1/1/2/2/3* random enemy unit/unit/units/units/units
+F14 - On play, *drain 1/1/2/2/3 strength* from *bordering* units
+F15 - On play, *drain 4/5/6/7/8 strength* from a random *surrounding* poisoned unit
+F16 - Before attacking a stronger unit, *drain 3/4/4/5/6 strength* from it
+F17 - On play, *drain* the strength from *1 strength* units
+F31 - Before moving, make *friendly* ancients on the board *drain 1/2/2/3/3* strength from a surrounding enemy poisoned unit
+F18 - Before attacking a weaker unit, *destroy* it
+F19 - On play, *gain* the strength of the strongest friendly Dragon
+F20 - On play, *convert bordering* enemy units with *3/4/5/6/7 or less strength*
+F21 - On play, *spawn 3* Nests on random *surrounding* tiles which will *hatch 2/3/4/5/6 strength* Dragons
+F22 - *Convert* a target enemy unit with *7/9/11/14/17 or less strength*
+F28 - After surviving damage, *drain up to 1/1/2/2/2* of the damage received from the enemy base
+F23 - On play, *destroy* units with the lowest strength and *spawn 5/6/7/8/10 strength* Ravens there
+S1 - On play, *spawn* a *1/1/2/2/3 strength* Satyr on the tile in front
+S24 - *Spawn* a *3/4/5/6/7 strength* Satyr on a random tile in your furthest row
+S2 - On death, *deal 2 damage* to your base
+S3 - When played with no *surrounding* units, *return* this card back to your hand with *1 more strength*
+S30 - When dying from an ability or spell, *respawn* on a random surrounding tile with *4/6/8/10/12 strength*
+S4 - On death, randomly *spawn* a *3/4/6/7/8 strength* Dragon on a tile *bordering* a friendly Dragon
+S5 - On play, *give 3/4/4/5/6 strength* to a random *bordering* friendly Satyr
+S6 - On play, *command a/a/// random/random/// bordering/bordering/bordering/bordering/surrounding* friendly unit/unit/units/units/units forward
+S7 - At the start of your turn, *give 1/1/2/2/3 strength* to friendly Satyrs
+S32 - Before attacking, *deal 1 damage* to your base
+S8 - On death, *spawn* a *1/2/3/4/5 strength* Satyr on a random *bordering* tile
+S9 - On play, *gain 2/2/3/3/4 strength* for each *bordering* friendly Satyr
+S29 - At the start of your turn, *deconfuse* and give *1 additional move* to friendly units in front
+S10 - *Destroy* a target unit or structure with *8/10/12/15/18 or less strength*. *Deal* spare damage randomly among *surrounding* units and structures. *Deal 3 damage* to your base
+S11 - Before attacking a structure or base, *deal 3/3/4/5/6 additional damage* to it
+S12 - Before attacking a unit, *spawn* a *1/1/2/2/3 strength* Dragon on a random tile *bordering* that unit
+S13 - On play, *deal 1/1/1/2/2 damage* to the enemy base
+S14 - On play, *give 1/1/2/2/3 strength* to *surrounding* friendly units
+S27 - After surviving damage, *command* friendly units with *equal or less strength* forward
+S15 - *Deal 2/3/4/5/6 damage* to enemies *surrounding* a friendly unit
+S16 - On play, *spawn 2* Satyrs with *2/2/3/3/4 strength* on random *bordering* tiles
+S18 - At the start of your turn, *deal 2/2/3/3/4 damage* to the enemy base
+S19 - On play, *fly* to the first empty tile in front. *Give 3/4/5/6/7 strength* to friendly units passed and *vitalize* them
+S28 - After surviving damage, randomly *give strength* to *2* other friendly units equal to the damage received
+S31 - Before moving, *deal 1/1/1/2/2 damage* to *1/2/2/3/3* other *friendly* ancient units, then deal the same amount of damage *to the enemy base*
+S22 - Before attacking, *deal 1/1/1/2/2 damage* to the enemy base
+S20 - *Give 2/3/4/5/6 strength* to a target friendly unit. *Command* friendly units in its row forward
+S23 - After attacking, *move* forward
+S21 - On play, randomly *play* up to *1/1/1/2/2* common or rare Satyr/Satyr/Satyr/Satyrs/Satyrs from your deck on a tile in its row
+T12 - At the start of your turn, hatch and *spawn* a *2/3/4/5/6 strength* Dragon here
