@@ -45,6 +45,7 @@ class MuZero:
             game_module = importlib.import_module("games." + game_name)
             self.Game = game_module.Game
             self.config = game_module.MuZeroConfig()
+            self.game_name = game_name
         except ModuleNotFoundError as err:
             print(
                 f'{game_name} is not a supported game name, try "cartpole" or refer to the documentation for adding a new game.'
@@ -138,6 +139,8 @@ class MuZero:
         """
         if log_in_tensorboard or self.config.save_model:
             self.config.results_path.mkdir(parents=True, exist_ok=True)
+            # Restore the diagnostics path in case the model was loaded
+            self.config.diagnostics_path = self.config.results_path / 'diagnostics'
 
         # Manage GPUs
         if 0 < self.num_gpus:
@@ -423,7 +426,7 @@ class MuZero:
             )
         return result
 
-    def load_model(self, checkpoint_path=None, replay_buffer_path=None):
+    def load_model(self, checkpoint_path, replay_buffer_path=None, use_as_diagnostics_path=True):
         """
         Load a model and/or a saved replay buffer.
 
@@ -433,10 +436,12 @@ class MuZero:
             replay_buffer_path (str): Path to replay_buffer.pkl
         """
         # Load checkpoint
-        if checkpoint_path:
-            checkpoint_path = pathlib.Path(checkpoint_path)
-            self.checkpoint = torch.load(checkpoint_path)
-            print(f"\nUsing checkpoint from {checkpoint_path}")
+        checkpoint_path = pathlib.Path(checkpoint_path)
+        self.checkpoint = torch.load(checkpoint_path)
+        print(f"\nUsing checkpoint from {checkpoint_path}")
+
+        if use_as_diagnostics_path:
+            self.config.diagnostics_path = checkpoint_path.parent / 'diagnostics'
 
         # Load replay buffer
         if replay_buffer_path:
@@ -475,7 +480,7 @@ class MuZero:
         obs = game.reset()
         dm = diagnose_model.DiagnoseModel(self.checkpoint, self.config)
         dm.compare_virtual_with_real_trajectories(obs, game, horizon)
-        input("Press enter to close all plots")
+        # input("Press enter to close all plots")
         dm.close_all()
 
 

@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+from matplotlib.backends.backend_pdf import PdfPages
 import numpy
 import seaborn
 import torch
@@ -107,20 +108,22 @@ class DiagnoseModel:
         for i, action in enumerate(virtual_trajectory_info.action_history):
             # Follow virtual trajectory until it reaches an illegal move in the real env
             if action not in game.legal_actions():
-                break  # Comment to keep playing after trajectory divergence
+                # break  # Comment to keep playing after trajectory divergence
                 action = SelfPlay.select_action(root, 0)
                 if trajectory_divergence_index is None:
                     trajectory_divergence_index = i
                     real_trajectory_end_reason = f"Virtual trajectory reached an illegal move at timestep {trajectory_divergence_index}."
 
             observation, reward, done = game.step(action)
+            
             root, mcts_info = MCTS(self.config).run(
                 self.model,
                 observation,
                 game.legal_actions(),
                 game.to_play(),
                 True,
-            )
+            ) if not done else (None, None)
+                 
             real_trajectory_info.store_info(root, mcts_info, action, reward)
             if done:
                 real_trajectory_end_reason = "Real trajectory reached Done"
@@ -142,7 +145,7 @@ class DiagnoseModel:
 
     def plot_mcts(self, root, plot=True):
         """
-        Plot the MCTS, pdf file is saved in the current directory.
+        Plot the MCTS, pdf file is saved in the diagnostics directory.
         """
         try:
             from graphviz import Digraph
@@ -185,8 +188,7 @@ class DiagnoseModel:
 
         traverse(root, None, None, True)
         graph.node(str(0), color="red")
-        # print(graph.source)
-        graph.render("mcts", view=plot, cleanup=True, format="pdf")
+        graph.render("mcts", view=plot, cleanup=True, directory=self.config.diagnostics_path)
         return graph
 
 
@@ -215,6 +217,8 @@ class Trajectoryinfo:
             self.action_history.append(action)
         if reward is not None:
             self.reward_history.append(reward)
+        if not (root or mcts_info):
+            return 
         self.prior_policies.append(
             [
                 root.children[action].prior
@@ -256,6 +260,10 @@ class Trajectoryinfo:
         self.mcts_depth.append(mcts_info["max_tree_depth"])
 
     def plot_trajectory(self):
+        trajectory_name = self.title[:-2]
+        pdf = PdfPages(self.config.diagnostics_path / f'{trajectory_name}.pdf')
+        print(trajectory_name)
+
         name = "Prior policies"
         print(name, self.prior_policies, "\n")
         plt.figure(self.title + name)
@@ -266,6 +274,7 @@ class Trajectoryinfo:
         )
         ax.set(xlabel="Action", ylabel="Timestep")
         ax.set_title(name)
+        pdf.savefig()
 
         name = "Policies after planning"
         print(name, self.policies_after_planning, "\n")
@@ -277,6 +286,7 @@ class Trajectoryinfo:
         )
         ax.set(xlabel="Action", ylabel="Timestep")
         ax.set_title(name)
+        pdf.savefig()
 
         if 0 < len(self.action_history):
             name = "Action history"
@@ -291,6 +301,7 @@ class Trajectoryinfo:
             )
             ax.set(ylabel="Timestep")
             ax.set_title(name)
+            pdf.savefig()
 
         name = "Values after planning"
         print(name, self.values_after_planning, "\n")
@@ -302,6 +313,7 @@ class Trajectoryinfo:
         )
         ax.set(xlabel="Action", ylabel="Timestep")
         ax.set_title(name)
+        pdf.savefig()
 
         name = "Prior root value"
         print(name, self.prior_root_value, "\n")
@@ -315,6 +327,7 @@ class Trajectoryinfo:
         )
         ax.set(ylabel="Timestep")
         ax.set_title(name)
+        pdf.savefig()
 
         name = "Root value after planning"
         print(name, self.root_value_after_planning, "\n")
@@ -328,6 +341,7 @@ class Trajectoryinfo:
         )
         ax.set(ylabel="Timestep")
         ax.set_title(name)
+        pdf.savefig()
 
         name = "Prior rewards"
         print(name, self.prior_rewards, "\n")
@@ -337,6 +351,7 @@ class Trajectoryinfo:
         )
         ax.set(xlabel="Action", ylabel="Timestep")
         ax.set_title(name)
+        pdf.savefig()
 
         if 0 < len(self.reward_history):
             name = "Reward history"
@@ -351,6 +366,7 @@ class Trajectoryinfo:
             )
             ax.set(ylabel="Timestep")
             ax.set_title(name)
+            pdf.savefig()
 
         name = "MCTS depth"
         print(name, self.mcts_depth, "\n")
@@ -364,5 +380,6 @@ class Trajectoryinfo:
         )
         ax.set(ylabel="Timestep")
         ax.set_title(name)
-
+        pdf.savefig()
+        pdf.close()
         plt.show(block=False)
